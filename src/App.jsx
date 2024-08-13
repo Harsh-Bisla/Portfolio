@@ -12,12 +12,17 @@ function App() {
     setMenu(menu === 'close' ? 'open' : 'close');
   };
 
+  const handleNavClick=()=>{
+    console.log("jsgchj")
+    setMenu('close')
+  }
+
 
   return (
     <>
         <i onClick={handleMenu} className={`hamburger ${menu==="open"?" fa-regular fa-circle-xmark":"fa-solid fa-bars"}`}></i>
     <div className='wrapper'>
-      <Sidebar menu={menu}/>
+      <Sidebar menu={menu} handleNavClick={handleNavClick}/>
       <div className='page'>
       <Outlet/>
         <span className='top-tags tags'>&lt;body&gt;</span>

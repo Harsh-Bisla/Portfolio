@@ -3,7 +3,7 @@ import React from 'react'
 import {NavLink } from 'react-router-dom'
 
 
-function Sidebar({menu}) {
+function Sidebar({menu, handleNavClick}) {
   return (
     <div className="navbar" style={{left:menu==="open"?"0px":""}}>
         <a className="logo" to="/">
@@ -11,19 +11,19 @@ function Sidebar({menu}) {
         <div className='name'>Harsh</div>
         </a>
         <nav>
-          <NavLink activeclassname="active" to='/'>
+          <NavLink onClick={handleNavClick} activeclassname="active" to='/'>
           <i className="fa-solid fa-house icon"></i>
           </NavLink>
-          <NavLink activeclassname="active" className='about' to='/about'>
+          <NavLink  onClick={handleNavClick} activeclassname="active" className='about' to='/about'>
           <i className="fa-regular fa-user icon"></i>
           </NavLink>
-          <NavLink activeclassname="active" className='skills' to='/skills'>
+          <NavLink onClick={handleNavClick} activeclassname="active" className='skills' to='/skills'>
           <i className="fa-solid fa-gear icon"></i>
           </NavLink>
-          <NavLink activeclassname="active" className='projects' to='/projects'>
+          <NavLink onClick={handleNavClick} activeclassname="active" className='projects' to='/projects'>
           <i className="fa-regular fa-eye"></i>
           </NavLink>
-          <NavLink activeclassname="active" className='contact' to='/contact'>
+          <NavLink onClick={handleNavClick} activeclassname="active" className='contact' to='/contact'>
           <i className="fa-regular fa-envelope"></i>
           </NavLink>
         </nav>
