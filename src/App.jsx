@@ -13,7 +13,6 @@ function App() {
   };
 
   const handleNavClick=()=>{
-    console.log("jsgchj")
     setMenu('close')
   }
 
