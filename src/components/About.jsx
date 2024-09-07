@@ -20,7 +20,7 @@ function About() {
     <div className='about-me'>
      <span>&lt;h1&gt;</span> <h1>About Me</h1> <span>&lt;h1/&gt;</span>
       </div>
-      <p>I am Harsh Bisla. a passionate frontend web developer with a solid foundation in HTML, CSS, and JavaScript, along with hands on experience in framework like React Js. I have experience in building responsive websites that provide an optimal user experience across all devices.</p>
+      <p>I'm a passionate Frontend Web Developer with a strong focus on creating intuitive, user-friendly interfaces. With expertise in HTML, CSS, JavaScript, and modern frameworks like React, I build responsive and visually appealing websites. I enjoy solving complex problems, improving web performance, and bringing designs to life with clean, efficient code. Constantly learning and staying updated with the latest trends.</p>
       <br/>
       <p>In my work, I prioritize attention to detail, performance optimization, and cross-browser compatibility. </p>
    </div>
