@@ -4,8 +4,6 @@ import './Project.css';
 import Loader from 'react-loaders';
 import spotifyImage from "../assets/Spotify.jpeg"
 import weather from "../assets/weather.jpg"
-import ReactFlipCard from 'reactjs-flip-card'
-
 
 
 function Projects() {

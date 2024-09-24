@@ -12,24 +12,23 @@ function App() {
     setMenu(menu === 'close' ? 'open' : 'close');
   };
 
-  const handleNavClick=()=>{
+  const handleNavClick = () => {
     setMenu('close')
   }
 
 
   return (
     <>
-        <i onClick={handleMenu} className={`hamburger ${menu==="open"?" fa-regular fa-circle-xmark":"fa-solid fa-bars"}`}></i>
-    <div className='wrapper'>
-      <Sidebar menu={menu} handleNavClick={handleNavClick}/>
-      <div className='page'>
-      <Outlet/>
-        <span className='top-tags tags'>&lt;body&gt;</span>
-        <span className='bottom-tags tags'>&lt;/body&gt;</span>
-       <br/>
-        <span className='bottom-tag-html tags'>&lt;/html&gt;</span>
-      </div>
-  
+      <i onClick={handleMenu} className={`hamburger ${menu === "open" ? " fa-regular fa-circle-xmark" : "fa-solid fa-bars"}`}></i>
+      <div className='wrapper'>
+        <Sidebar menu={menu} handleNavClick={handleNavClick} />
+        <div className='page'>
+          <Outlet />
+          <span className='top-tags tags'>&lt;body&gt;</span>
+          <span className='bottom-tags tags'>&lt;/body&gt;</span>
+          <br />
+          <span className='bottom-tag-html tags'>&lt;/html&gt;</span>
+        </div>
       </div>
     </>
   )

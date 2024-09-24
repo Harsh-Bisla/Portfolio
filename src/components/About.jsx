@@ -11,6 +11,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Loader from 'react-loaders'
+import ParticleBackground from './ParticleBackground'
 
 function About() {
   return (
@@ -26,6 +27,9 @@ function About() {
    </div>
 
 <div className="stage-cube-cont">
+  <div style={{position:"absolute", zIndex:-2}}>
+<ParticleBackground/>
+</div>
 <div className="cubespinner">
   <div className="face1">
     <FontAwesomeIcon icon={faBootstrap} color="#7311f5" />
